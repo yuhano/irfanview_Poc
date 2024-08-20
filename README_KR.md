@@ -1,23 +1,22 @@
-## irfanview PoC Vulnerability Analysis
-## Overview
-* A free image viewer available for Windows.
-* The Korean translation is available at the following link. 
+# irfanview PoC 취약점 분석
+## 개요
+* 윈도우에서 무료로 사용가능한 이미지뷰어입니다.
 
-## Vulnerability 1
-## Product Information
+# 취약점 1
+## 제품 정보
 * Plugin: Exr.dll - 4.67.1.0
 
-## File Information
-### Extension.
+## 파일 정보
+### 확장자
 * exr
 
-### File name
+### 파일명
 * 0001.exr
 
-## Vulnerability description
-* When executing certain files in irfanview version 4.67, an access violation occurs in EXR!ReadEXR+0x40ef1.
+## 취약점 설명
+* irfanview 4.67 버전에서 특정 파일을 실행할 때, EXR!ReadEXR+0x40ef1에서 액세스 위반이 발생합니다.
 
-### Vulnerability POC
+### 취약점 POC
 ```
 (b390.a254): Break instruction exception - code 80000003 (first chance)
 ntdll!LdrpDoDebuggerBreak+0x30:
@@ -92,21 +91,21 @@ EXR!ReadEXR+0x40ef1:
 00007ff9`def42df9 eb31            jmp     EXR!ReadEXR+0x40f3c (00007ff9`def42e2c)
 ```
 
-## Vulnerability 2
-## Product Information
+# 취약점 2
+## 제품 정보
 * Plugin: Exr.dll - 4.67.1.0
 
-## File Information
-### Extension.
+## 파일 정보
+### 확장자
 * exr
 
-### File name
+### 파일명
 * 0002.exr
 
-## Vulnerability description
-* When executing certain files in irfanview version 4.67, an access violation occurs in EXR!ReadEXR+0x4eef0.
+## 취약점 설명
+* irfanview 4.67 버전에서 특정 파일을 실행할 때, EXR!ReadEXR+0x4eef0에서 액세스 위반이 발생합니다.
 
-### Vulnerability POC
+### 취약점 POC
 ```
 (5550.8528): Break instruction exception - code 80000003 (first chance)
 ntdll!LdrpDoDebuggerBreak+0x30:
@@ -185,21 +184,22 @@ EXR!ReadEXR+0x4eef0:
 
 ```
 
-## Vulnerability 3
-## Product Information
+
+# 취약점 3
+## 제품 정보
 * Plugin: Exr.dll - 4.67.1.0
 
-## File Information
-### Extension.
+## 파일 정보
+### 확장자
 * exr
 
-### File name
+### 파일명
 * 0003.exr
 
-## Vulnerability description
-* When executing certain files in irfanview version 4.67, an access violation occurs in EXR!ReadEXR+0x3df50.
+## 취약점 설명
+* irfanview 4.67 버전에서 특정 파일을 실행할 때, EXR!ReadEXR+0x3df50에서 액세스 위반이 발생합니다.
 
-### Vulnerability POC
+### 취약점 POC
 ```
 0:000> g
 ModLoad: 00007ffb`24870000 00007ffb`248a1000   C:\WINDOWS\System32\IMM32.DLL
