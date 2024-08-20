@@ -1,7 +1,8 @@
 ## irfanview PoC Vulnerability Analysis
 ## Overview
 * A free image viewer available for Windows.
-* The Korean translation is available at the following link. 
+* The Korean translation is available at the following link.
+    * https://github.com/yuhano/irfanview_Poc/blob/main/README_KR.md
 
 ## Vulnerability 1
 ## Product Information
